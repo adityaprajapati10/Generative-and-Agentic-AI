@@ -58,13 +58,43 @@ But before reaching the embedding stage, several preprocessing steps are crucial
 - **Tool**: `WordNetLemmatizer` (from NLTK)
 - **Example**: Input: "running"  |  Output: "run"
 
-### 4. **Part-of-Speech (POS) Tagging**
+### 4. Part-of-Speech (POS) Tagging
 - Assigns grammatical labels like noun, verb, adjective, etc.
 - Useful for context understanding and improving lemmatization.
 - **Example**: 
   Input: "He is playing football"  
   Output: [("He", PRP), ("is", VBZ), ("playing", VBG), ("football", NN)]
- 
+
+### 5. NER (Name Entity Recognition )
+- Identifies and classifies **named entities** in text into predefined categories such as:
+  - Person (PER)
+  - Organization (ORG)
+  - Location (LOC)
+  - Date, Time, Money, Percent, etc.
+  
+Helps in extracting **real-world entities** from text, enabling tasks like:
+  - Information retrieval
+  - Question answering
+  - Text summarization
+
+**Example:**
+Input: `"Barack Obama was the president of the United States."`  
+Output: [
+		("Barack Obama", PERSON),  
+		("United States", LOCATION)  
+       ]
+
+##### Common Entity Types
+
+| Entity Type | Description                | Example             |
+|-------------|----------------------------|---------------------|
+| PERSON      | Names of people            | Elon Musk, Ram      |
+| ORG         | Organizations, companies   | Google, WHO         |
+| LOC         | Locations, cities, countries| Delhi, India        |
+| DATE        | Dates                      | 1st July, 2025      |
+| TIME        | Time                       | 5 PM, 10:30 AM      |
+| MONEY       | Monetary values            | $100, ₹500          |
+| GPE         | Geo-political entities     | USA, China          |
+
+
 ---
-
-
