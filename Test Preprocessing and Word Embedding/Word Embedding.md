@@ -12,7 +12,7 @@ After preprocessing, the next step is to **convert text (tokens or sentences) in
 - (Others include GloVe, FastText, BERT etc.)
 
 ---
-## **One-Hot Encoding
+## **One-Hot Encoding**
 
 **One-Hot Encoding** is a basic technique to represent words as vectors.
 
@@ -76,7 +76,7 @@ one_hot_vectors =
 - Any **new or unseen words** cannot be encoded without retraining the vocabulary.
 ----
 
-## **Bag of Words (BoW)
+## **Bag of Words (BoW)**
 
 **Bag of Words (BoW)** is a **frequency-based encoding technique** used in NLP to convert text data into numerical vectors.
 
@@ -158,7 +158,7 @@ By default the counter vectorizer that you have created over here it holds so ma
 
 ---
 
-## **TF-IDF (Term Frequency-Inverse Document Frequency)
+## **TF-IDF (Term Frequency-Inverse Document Frequency)**
 
 **TF-IDF** is a numerical statistic that reflects how important a word is to a document in a collection (corpus).
 
@@ -232,7 +232,7 @@ array([
 
 ---
 
-## **Word2Vec (Word to Vector) **
+## **Word2Vec (Word to Vector)**
 
 
 **Word2Vec** is a powerful word embedding technique developed by **Google** that learns **semantic relationships** between words.
